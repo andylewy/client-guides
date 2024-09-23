@@ -1,14 +1,14 @@
 # Scheduling, rescheduling, and canceling a test
 
 - [Scheduling, rescheduling, and canceling a test](#scheduling-rescheduling-and-canceling-a-test)
-  - [Scheduling a testtttt](#scheduling-a-testtttt)
+  - [Scheduling a test](#scheduling-a-test)
   - [Rescheduling and canceling](#rescheduling-and-canceling)
   - [What if I'm past the deadline to reschedule or cancel my test?](#what-if-im-past-the-deadline-to-reschedule-or-cancel-my-test)
   - [Change test delivery (Test Center)](#change-test-delivery-test-center)
   - [Change test language](#change-test-language)
   - [Retaking a test](#retaking-a-test)
 
-## Scheduling a testtttt
+## Scheduling a test
 
 To schedule a BACB exam, you must submit a certification application to the BACB and receive an Approval Notice. Once you receive the notice, you can schedule and pay for the exam through the Pearson VUE website or by contacting the Pearson VUE Customer Service Call Center. Note that BACB does not use OnVUE, and walk-in appointments are not allowed.
 
