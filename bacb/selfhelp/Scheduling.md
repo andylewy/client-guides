@@ -1,6 +1,5 @@
 # Scheduling, rescheduling, and canceling a test
 
-
 - [Scheduling a test](#scheduling-a-test)
 - [Rescheduling and canceling](#rescheduling-and-canceling)
 - [What if I'm past the deadline to reschedule or cancel my test?](#what-if-im-past-the-deadline-to-reschedule-or-cancel-my-test)
