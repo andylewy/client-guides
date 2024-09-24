@@ -11,7 +11,7 @@ jobs:
 
     steps:
       - name: Checkout repository
-        uses: actions/checkout@v3
+        uses: actions/checkout@v4
 
       - name: Push content to Salesforce
         run: |
@@ -19,4 +19,4 @@ jobs:
           -H "Authorization: Bearer ${{ secrets.SALESFORCE_ACCESS_KEY }}" \
           -H "Secret-Key: ${{ secrets.SALESFORCE_SECRET_KEY }}" \
           -H "Bucket: ${{ secrets.SALESFORCE_BUCKET }}" \
-          -F "file=@path_to_your_article.md"
+          -F "file=@path_to_your_article.md" --fail
