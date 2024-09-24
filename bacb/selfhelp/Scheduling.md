@@ -1,11 +1,12 @@
 # Scheduling, rescheduling, and canceling a test
 
-- [Scheduling a test](#scheduling-a-test)
-- [Rescheduling and canceling](#rescheduling-and-canceling)
-- [What if I'm past the deadline?](#what-if-im-past-the-deadline)
-- [Change test delivery](#change-test-delivery)
-- [Change test language](#change-test-language)
-- [Retaking a test](#retaking-a-test)
+- [Scheduling, rescheduling, and canceling a test](#scheduling-rescheduling-and-canceling-a-test)
+  - [Scheduling a test](#scheduling-a-test)
+  - [Rescheduling and canceling](#rescheduling-and-canceling)
+  - [What if I'm past the deadline to reschedule or cancel my test?](#what-if-im-past-the-deadline-to-reschedule-or-cancel-my-test)
+  - [Change test delivery (Test Center)](#change-test-delivery-test-center)
+  - [Change test language](#change-test-language)
+  - [Retaking a Test](#retaking-a-test)
 
 ## Scheduling a test
 
