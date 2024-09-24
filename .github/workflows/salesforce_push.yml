@@ -19,4 +19,4 @@ jobs:
           -H "Authorization: Bearer ${{ secrets.SALESFORCE_ACCESS_KEY }}" \
           -H "Secret-Key: ${{ secrets.SALESFORCE_SECRET_KEY }}" \
           -H "Bucket: ${{ secrets.SALESFORCE_BUCKET }}" \
-          -F "file=@path_to_your_article.md" --fail
+          -F "file=@bacb/Scheduling.md" --fail
