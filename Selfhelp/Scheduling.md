@@ -1,12 +1,13 @@
 # Scheduling, Rescheduling, and Canceling a Test
 
-- [Scheduling a Test](#scheduling-a-test)
-- [Rescheduling and Canceling](#rescheduling-and-canceling)
-- [Rescheduling and Canceling with Accommodations](#rescheduling-and-canceling-with-accommodations)
-- [What if I'm Past the Deadline to Reschedule or Cancel My Test?](#what-if-im-past-the-deadline-to-reschedule-or-cancel-my-test)
-- [Change Test Delivery (Test Center)](#change-test-delivery-test-center)
-- [Change Test Language](#change-test-language)
-- [Retaking a Test](#retaking-a-test)
+- [Scheduling, Rescheduling, and Canceling a Test](#scheduling-rescheduling-and-canceling-a-test)
+  - [Scheduling a Test](#scheduling-a-test)
+  - [Rescheduling and Canceling](#rescheduling-and-canceling)
+  - [Rescheduling and Canceling with Accommodations](#rescheduling-and-canceling-with-accommodations)
+  - [What if I'm Past the Deadline to Reschedule or Cancel My Test?](#what-if-im-past-the-deadline-to-reschedule-or-cancel-my-test)
+  - [Change Test Delivery (Test Center)](#change-test-delivery-test-center)
+  - [Change Test Language](#change-test-language)
+  - [Retaking a Test](#retaking-a-test)
 
 ## Scheduling a Test
 
@@ -21,7 +22,7 @@ Make sure to schedule your test at least 24 hours in advance. If you require spe
 
 You may reschedule or cancel your exam through the Pearson VUE website or by contacting Pearson VUE Customer Service. Test centers cannot directly reschedule or cancel exams.
 
-- **Rescheduling:** Must be done at least **48 hours** before the appointment.
+**Rescheduling:** Must be done at least **48 hours** before the appointment.
   - More than 30 days before the appointment: No fee.
   - Between 5 to 30 days before the appointment: A rescheduling fee applies:
     - 1.5-hour exam: $27.00.
@@ -31,7 +32,7 @@ You may reschedule or cancel your exam through the Pearson VUE website or by con
     - 4-hour exam: $69.00.
   - Less than 48 hours: Exams cannot be rescheduled.
 
-- **Canceling:** Can also be done through the Pearson VUE website or by contacting Customer Service.
+**Canceling:** Can also be done through the Pearson VUE website or by contacting Customer Service.
   - More than 30 days before the appointment: No fee.
   - Between 5 to 30 days before the appointment: A cancellation fee applies:
     - 1.5-hour exam: $27.00.
