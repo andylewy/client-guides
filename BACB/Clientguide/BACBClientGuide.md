@@ -38,4 +38,5 @@ Candidates must contact BACB to make any demographic changes: [https://www.bacb.
 **Who can help candidates recover accounts?**  
 Pearson VUE Customer Service
 
+*Update - 1/27/2025
 ---
