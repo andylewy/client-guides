@@ -1,8 +1,3 @@
----
-title: Acme Corp Onboarding Guide
-layout: layout.njk
----
-
 # Welcome to Acme Corp's Client Portal
 
 This guide will walk you through the onboarding steps, account setup, and support procedures.
