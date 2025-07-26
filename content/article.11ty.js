@@ -1,21 +1,27 @@
 const fs = require("fs");
 const path = require("path");
 const nunjucks = require("nunjucks");
-const markdownIt = require("markdown-it")();
+const markdownIt = require("markdown-it");
 
-const audiences = ["internal", "external"];
+module.exports = function () {
+  const audiences = ["internal", "external"];
+  const md = markdownIt();
 
-module.exports = audiences.map(audience => {
-  return {
-    permalink: `${audience}/article/index.html`,
-    data: {
-      layout: "base.njk",
-      title: `Refund Policy (${audience})`
-    },
-    render() {
-      const raw = fs.readFileSync(path.join(__dirname, "article.md"), "utf-8");
-      const renderedMd = nunjucks.renderString(raw, { audience });
-      return markdownIt.render(renderedMd);
-    }
-  };
-});
+  return audiences.map((audience) => {
+    const filePath = path.join(__dirname, "article.md");
+    const raw = fs.readFileSync(filePath, "utf-8");
+    const rendered = nunjucks.renderString(raw, { audience });
+
+    return {
+      data: {
+        permalink: `${audience}/article/index.html`,
+        layout: "base.njk",
+        title: `Refund Policy (${audience})`,
+        audience,
+      },
+      render() {
+        return md.render(rendered);
+      },
+    };
+  });
+};
