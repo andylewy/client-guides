@@ -1,17 +1,22 @@
-name: Deploy Eleventy to GitHub Pages
+name: Build and Deploy on Shared Content Change
 
 on:
   push:
-    branches: [main]
+    paths:
+      - 'content/shared/**'
+      - '.github/workflows/deploy.yml'  # optional, to trigger if workflow itself changes
+    branches:
+      - main
 
 jobs:
-  build:
+  build-deploy:
     runs-on: ubuntu-latest
+
     steps:
-      - name: Check out code
+      - name: Checkout repo
         uses: actions/checkout@v3
 
-      - name: Set up Node.js
+      - name: Set up Node
         uses: actions/setup-node@v3
         with:
           node-version: 18
@@ -26,4 +31,4 @@ jobs:
         uses: peaceiris/actions-gh-pages@v3
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
-          publish_dir: ./dist
+          publish_dir: ./docs
