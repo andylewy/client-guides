@@ -1,6 +1,6 @@
 backend:
   name: github
-  repo: your-username/client-guides
+  repo: RaoulDuke/client-guides
   branch: main
 
 media_folder: "static/uploads"
