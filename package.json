@@ -5,6 +5,8 @@
     "build": "eleventy"
   },
   "devDependencies": {
-    "@11ty/eleventy": "^2.0.0"
+    "@11ty/eleventy": "^2.0.0",
+    "markdown-it": "^13.0.1",
+    "nunjucks": "^3.2.4"
   }
 }
