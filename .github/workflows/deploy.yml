@@ -35,4 +35,4 @@ jobs:
           git config --global user.email "actions@github.com"
           git add docs
           git diff --quiet --cached || git commit -m "Auto-build from shared content update"
-          git push https://x-access-token:${GH_PAT}@github.com/${{ github.repository }}.git HEAD:main
+          git push https://x-access-token:${GH_PAT}@github.com/andylewy/client-guides.git HEAD:main
