@@ -1,0 +1,38 @@
+name: Build Eleventy Docs
+
+on:
+  push:
+    branches: [ main ]
+  workflow_dispatch:
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: ⬇️ Checkout code
+        uses: actions/checkout@v3
+
+      - name: 🟢 Set up Node
+        uses: actions/setup-node@v3
+        with:
+          node-version: 18
+
+      - name: 📦 Install dependencies
+        run: npm ci
+
+      - name: 🔧 Build internal docs
+        run: |
+          cp content/_data/audience.internal.json content/_data/audience.json
+          npx eleventy --output=docs/internal
+
+      - name: 🔧 Build external docs
+        run: |
+          cp content/_data/audience.external.json content/_data/audience.json
+          npx eleventy --output=docs/external
+
+      - name: 📤 Upload built docs (optional)
+        uses: actions/upload-artifact@v3
+        with:
+          name: site-build
+          path: docs/
