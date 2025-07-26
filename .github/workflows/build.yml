@@ -24,8 +24,9 @@ jobs:
       - name: ⚙️ Build site (both audiences)
         run: npx eleventy
 
-      - name: 📤 Upload built site as artifact (optional)
-        uses: actions/upload-artifact@v3
-        with:
-          name: full-site
-          path: docs/
+- name: 📤 Upload built site
+  uses: actions/upload-artifact@v4
+  with:
+    name: full-site
+    path: docs/
+
