@@ -26,8 +26,6 @@ jobs:
 
       - name: Build site with Eleventy
         run: npx @11ty/eleventy
-- name: Check if docs folder has changes
-  run: git status
 
       - name: Commit and push changes to docs folder
         run: |
