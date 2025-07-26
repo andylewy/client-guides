@@ -8,7 +8,7 @@ module.exports = function () {
   const md = markdownIt();
 
   return audiences.map((audience) => {
-    const filePath = path.join(__dirname, "article.md");
+    const filePath = path.join(__dirname, "raw/article.md");
     const raw = fs.readFileSync(filePath, "utf-8");
     const rendered = nunjucks.renderString(raw, { audience });
 
