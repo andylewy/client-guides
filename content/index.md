@@ -1,7 +1,8 @@
 ---
-title: Root Test Page
+layout: layout.njk
+title: Home
 ---
 
-# It works!
+# Welcome to the Client Guide Portal
 
-This page proves Eleventy is building pages.
+Select a client from the left to view their documentation.
