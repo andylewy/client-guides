@@ -15,16 +15,18 @@ module.exports = function (eleventyConfig) {
     });
   });
 
-  // ✅ Passthrough copy (if you have other folders you need)
+  // ✅ Passthrough copy
   eleventyConfig.addPassthroughCopy("content/admin");
 
-  // ✅ Return config object
+  // ✅ Full config object with Nunjucks for Markdown
   return {
     dir: {
       input: "content",
       output: "docs",
-      includes: "../_includes" // allow includes from _includes/
+      includes: "../_includes" // point up one level to use _includes/
     },
-    markdownTemplateEngine: "njk"
+    markdownTemplateEngine: "njk", // <-- enable Nunjucks in markdown
+    dataTemplateEngine: "njk",     // <-- enable Nunjucks in frontmatter
+    htmlTemplateEngine: "njk"      // optional: apply Nunjucks to HTML too
   };
 };
