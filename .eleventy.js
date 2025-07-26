@@ -1,15 +1,9 @@
-module.exports = function (eleventyConfig) {
-  eleventyConfig.addPassthroughCopy("content/shared");
-
-  eleventyConfig.addGlobalData("eleventyComputed", {
-    layout: data => data.layout || "layout.njk"
-  });
-
+module.exports = function () {
   return {
     dir: {
       input: "content",
-      includes: "../", // Allows shared content inclusion
-      output: "dist"
+      output: "dist",
+      includes: "../_includes"  // ✅ THIS IS THE FIX
     },
     markdownTemplateEngine: "njk"
   };

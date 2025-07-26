@@ -1,0 +1,9 @@
+module.exports = function () {
+  return {
+    dir: {
+      input: "content",
+      output: "dist"
+    },
+    markdownTemplateEngine: "njk"
+  };
+};
