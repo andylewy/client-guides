@@ -15,4 +15,4 @@ This guide will walk you through the onboarding steps, account setup, and suppor
 
 ## Step 2: Review Standard Policies
 
-{% include "content/shared/terms_of_use.md" %}
+{% include "content/shared/refund_policy.md" %}
