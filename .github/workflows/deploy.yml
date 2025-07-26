@@ -2,33 +2,35 @@ name: Build and Deploy on Shared Content Change
 
 on:
   push:
+    branches: [main]
     paths:
       - 'content/shared/**'
-      - '.github/workflows/deploy.yml'  # optional, to trigger if workflow itself changes
-    branches:
-      - main
+      - '_includes/**'
+      - '.github/workflows/**'
 
 jobs:
-  build-deploy:
+  build:
     runs-on: ubuntu-latest
 
     steps:
-      - name: Checkout repo
-        uses: actions/checkout@v3
+      - name: Checkout code
+        uses: actions/checkout@v4
 
-      - name: Set up Node
-        uses: actions/setup-node@v3
+      - name: Set up Node.js
+        uses: actions/setup-node@v4
         with:
-          node-version: 18
+          node-version: '18'
 
       - name: Install dependencies
-        run: npm install
+        run: npm ci
 
-      - name: Build site
+      - name: Build site with Eleventy
         run: npx @11ty/eleventy
 
-      - name: Deploy to GitHub Pages
-        uses: peaceiris/actions-gh-pages@v3
-        with:
-          github_token: ${{ secrets.GITHUB_TOKEN }}
-          publish_dir: ./docs
+      - name: Commit and push changes to docs folder
+        run: |
+          git config user.name "GitHub Actions"
+          git config user.email "actions@github.com"
+          git add docs
+          git diff --quiet --cached || git commit -m "Auto-build from shared content update"
+          git push origin main
