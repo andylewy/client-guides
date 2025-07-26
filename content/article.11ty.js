@@ -10,7 +10,7 @@ module.exports = audiences.map(audience => {
     permalink: `${audience}/article/index.html`,
     data: {
       layout: "base.njk",
-      title: `Article (${audience})`
+      title: `Refund Policy (${audience})`
     },
     render() {
       const raw = fs.readFileSync(path.join(__dirname, "article.md"), "utf-8");
