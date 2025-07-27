@@ -5,4 +5,4 @@ permalink: clients/acme-corp/article-full/index.html
 audience: all
 ---
 
-{{ include("clients/acme-corp/article.md") | markdown | safe }}
+{{ "_includes/clients/acme-corp/article.md" | readFile | markdown | safe }}
