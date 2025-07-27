@@ -9,17 +9,18 @@
     
 <h2>Refund Policy</h2>
 <p>All customers have 30 days from purchase to request a refund.</p>
-<h2>{% if audience == &quot;internal&quot; or audience == &quot;all&quot; %}</h2>
-<h2>INTERNAL AUDIENCE CONTENT:
-VIP refunds require director approval and should be logged in Salesforce.</h2>
-<p>{% endif %}</p>
-<h2>{% if audience == &quot;partner&quot; or audience == &quot;all&quot; %}</h2>
-<h2>PARTNER AUDIENCE CONTENT: with your ACME account manager.</h2>
-<p>{% endif %}</p>
-<h2>{% if audience == &quot;customer&quot; or audience == &quot;all&quot; %}</h2>
-<h2>CUSTOMER AUDIENCE CONTENT:
-For any refund, contact our customer support team at support@acme.com.</h2>
-<p>{% endif %}</p>
+<p>&lt;!-- audience: internal --&gt;
+<strong>INTERNAL AUDIENCE CONTENT:</strong><br>
+VIP refunds require director approval and should be logged in Salesforce.
+&lt;!-- /audience --&gt;</p>
+<p>&lt;!-- audience: partner --&gt;
+<strong>PARTNER AUDIENCE CONTENT:</strong><br>
+Please coordinate client refund requests with your ACME account manager.
+&lt;!-- /audience --&gt;</p>
+<p>&lt;!-- audience: customer --&gt;
+<strong>CUSTOMER AUDIENCE CONTENT:</strong><br>
+For any refund, contact our customer support team at <a href="mailto:support@acme.com">support@acme.com</a>.
+&lt;!-- /audience --&gt;</p>
 
 
   </main>
