@@ -5,6 +5,4 @@ permalink: clients/acme-corp/article-full/index.html
 audience: all
 ---
 
-{% markdown %}
-{% include "clients/acme-corp/article.md" %}
-{% endmarkdown %}
+{{ include("clients/acme-corp/article.md") | markdown | safe }}
