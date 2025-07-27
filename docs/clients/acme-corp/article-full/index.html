@@ -7,30 +7,20 @@
 <body>
   <main>
     
-## Refund Policy
-
-All customers have 30 days from purchase to request a refund.
-
-
----
-**INTERNAL AUDIENCE CONTENT:**
-VIP refunds require director approval and should be logged in Salesforce.
----
-
-
-
----
-**PARTNER AUDIENCE CONTENT:**
-Please coordinate client refund requests with your ACME account manager.
----
-
-
-
----
-**CUSTOMER AUDIENCE CONTENT:**
-For any refund, contact our customer support team at support@acme.com.
----
-
+<h2>Refund Policy</h2>
+<p>All customers have 30 days from purchase to request a refund.</p>
+<h2>{% if audience == &quot;internal&quot; or audience == &quot;all&quot; %}</h2>
+<h2><strong>INTERNAL AUDIENCE CONTENT:</strong>
+VIP refunds require director approval and should be logged in Salesforce.</h2>
+<p>{% endif %}</p>
+<h2>{% if audience == &quot;partner&quot; or audience == &quot;all&quot; %}</h2>
+<h2><strong>PARTNER AUDIENCE CONTENT:</strong>
+Please coordinate client refund requests with your ACME account manager.</h2>
+<p>{% endif %}</p>
+<h2>{% if audience == &quot;customer&quot; or audience == &quot;all&quot; %}</h2>
+<h2><strong>CUSTOMER AUDIENCE CONTENT:</strong>
+For any refund, contact our customer support team at support@acme.com.</h2>
+<p>{% endif %}</p>
 
 
   </main>
