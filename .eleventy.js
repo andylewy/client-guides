@@ -1,11 +1,16 @@
 const fs = require("fs");
 const path = require("path");
-const markdownIt = require("markdown-it")(); // <-- Add this
+const markdownIt = require("markdown-it")();
 
 module.exports = function (eleventyConfig) {
-  // ✅ Custom Nunjucks Markdown filter for rendering markdown in .njk templates
+  // Custom Nunjucks Markdown filter for rendering markdown in .njk templates
   eleventyConfig.addNunjucksFilter("markdown", function(content) {
     return markdownIt.render(content);
+  });
+
+  // Custom Nunjucks filter to read a file's contents (absolute path from project root)
+  eleventyConfig.addNunjucksFilter("readFile", function(filePath) {
+    return fs.readFileSync(path.join(__dirname, filePath), "utf-8");
   });
 
   // ✅ Auto-copy shared Markdown files from content/shared to _includes/shared
@@ -35,8 +40,8 @@ module.exports = function (eleventyConfig) {
       output: "docs",
       includes: "../_includes"
     },
-    markdownTemplateEngine: "njk", // Allows Nunjucks logic in markdown
-    dataTemplateEngine: "njk",     // Allows Nunjucks in frontmatter/data files
-    htmlTemplateEngine: "njk"      // Allows Nunjucks in HTML templates (optional)
+    markdownTemplateEngine: "njk",
+    dataTemplateEngine: "njk",
+    htmlTemplateEngine: "njk"
   };
 };
