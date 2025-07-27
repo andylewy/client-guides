@@ -1,7 +1,13 @@
 const fs = require("fs");
 const path = require("path");
+const markdownIt = require("markdown-it")(); // <-- Add this
 
 module.exports = function (eleventyConfig) {
+  // ✅ Custom Nunjucks Markdown filter for rendering markdown in .njk templates
+  eleventyConfig.addNunjucksFilter("markdown", function(content) {
+    return markdownIt.render(content);
+  });
+
   // ✅ Auto-copy shared Markdown files from content/shared to _includes/shared
   eleventyConfig.on("beforeBuild", () => {
     const srcDir = "content/shared";
