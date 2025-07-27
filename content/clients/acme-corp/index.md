@@ -12,10 +12,10 @@ This guide will walk you through the onboarding steps, account setup, and suppor
 
 Choose a version to see audience-specific content rendered from a single source:
 
-- [Full Article (All Audiences)](/clients/acme-corp/article-full/)
-- [Customer Version](/clients/acme-corp/article-customer/)
-- [Partner Version](/clients/acme-corp/article-partner/)
-- [Internal Version](/clients/acme-corp/article-internal/)
+- [Full Article (All Audiences)](/client-guides/clients/acme-corp/article-full/)
+- [Customer Version](/client-guides/clients/acme-corp/article-customer/)
+- [Partner Version](/client-guides/clients/acme-corp/article-partner/)
+- [Internal Version](/client-guides/clients/acme-corp/article-internal/)
 
 ---
 
