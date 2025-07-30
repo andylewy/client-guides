@@ -28,3 +28,7 @@ Choose a version to see audience-specific content rendered from a single source:
 ## Step 2: Review Standard Policies
 
 {% include "shared/refund_policy.md" %}
+
+## Terms of Use
+
+{% include "shared/terms_of_use.md" %}
