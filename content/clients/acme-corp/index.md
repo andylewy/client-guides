@@ -8,7 +8,7 @@ permalink: clients/acme-corp/index.html
 
 This guide will walk you through the onboarding steps, account setup, and support procedures.
 
-## Try the Audience-Based Article Demo
+## Audience-Based Articles
 
 Choose a version to see audience-specific content rendered from a single source:
 
